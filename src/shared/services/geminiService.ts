@@ -62,7 +62,7 @@ async function withRetry<T>(
 }
 
 // ============================================================================
-// Type Definitions (imported from feature modules)
+// Problem Solver Types
 // ============================================================================
 
 // Exam Prep Types
@@ -149,7 +149,7 @@ const callOpenAICompatible = async (messages: any[], responseFormat?: any): Prom
 };
 
 // ============================================================================
-// Exam Prep Mode Functions
+// Problem Solver Mode Functions
 // ============================================================================
 
 const analysisSchema: Schema = {

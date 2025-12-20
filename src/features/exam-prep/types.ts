@@ -1,5 +1,5 @@
 // ============================================================================
-// Exam Prep Mode Type Definitions
+// Problem Solver Mode Type Definitions
 // ============================================================================
 
 export enum AppState {

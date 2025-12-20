@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AnalysisResult, AnalysisStep, AppState } from '../types';
 import MarkdownRenderer from './MarkdownRenderer';
-import { ArrowLeft, Activity, Image as ImageIcon, ChevronDown, ChevronUp, Layers, CheckCircle, Rotate3D } from 'lucide-react';
+import { ArrowLeft, Activity, Image as ImageIcon, ChevronDown, ChevronUp, Layers, CheckCircle, Rotate3D, BookOpen } from 'lucide-react';
 import { createTutorSession } from '@shared/services/geminiService';
+import { ROUTES } from '@/config/constants';
 import ChatWidget from './ChatWidget';
 
 interface ResultViewProps {
@@ -18,6 +20,7 @@ const ResultView: React.FC<ResultViewProps> = ({
   state, 
   onReset 
 }) => {
+  const navigate = useNavigate();
   // Only expand when analysis is complete
   const [isOriginalExpanded, setIsOriginalExpanded] = useState(false);
   const [chatSession, setChatSession] = useState<any>(null);
@@ -211,14 +214,21 @@ const ResultView: React.FC<ResultViewProps> = ({
                 </div>
               </div>
 
-              {/* Bottom Action Button */}
-              <div className="flex justify-center pt-8 pb-4">
+              {/* Bottom Action Buttons */}
+              <div className="flex flex-col md:flex-row justify-center gap-4 pt-8 pb-4">
                 <button
                   onClick={onReset}
-                  className="w-full max-w-2xl px-16 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                  className="flex-1 max-w-md px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 flex items-center justify-center gap-3"
                 >
                   <ImageIcon size={20} />
                   <span>再拍一题</span>
+                </button>
+                <button
+                  onClick={() => navigate(ROUTES.TOPIC)}
+                  className="flex-1 max-w-md px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                >
+                  <BookOpen size={20} />
+                  <span>学习相应专题</span>
                 </button>
               </div>
 

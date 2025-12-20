@@ -7,7 +7,7 @@ import { readFileAsBase64, extractBase64Data } from '@shared/utils/fileHelpers';
 import ErrorMessage from '@shared/components/ErrorMessage';
 
 /**
- * Exam Prep Mode Page
+ * Problem Solver Mode Page
  * Image upload and AI-powered problem analysis
  */
 const ExamPrepMode: React.FC = () => {

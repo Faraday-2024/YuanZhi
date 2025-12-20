@@ -27,8 +27,8 @@ const UploadZone: React.FC<UploadZoneProps> = ({ onFileSelect }) => {
             <BookOpen size={32} />
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
-            备考模式
-            <span className="block text-lg font-medium text-indigo-600 mt-2">AI 智能助考系统</span>
+            智能搜题
+            <span className="block text-lg font-medium text-indigo-600 mt-2">AI 智能解题系统</span>
           </h1>
           <p className="text-slate-500 text-lg">
             上传题目，获取 Gemini AI 深度思考后的可视化全解。

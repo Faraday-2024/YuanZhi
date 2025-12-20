@@ -4,11 +4,12 @@
 
 ## ✨ 功能特性
 
-### 📚 备考模式 (Exam Prep Mode)
+### 🔍 智能搜题 (Problem Solver)
 - 上传题目图片，AI自动分析并生成详细解题步骤
 - 智能生成可视化辅助图像
 - 支持SVG、3D动画等多种可视化形式
 - 时间线式的步骤展示
+- 一键跳转到相关专题学习
 
 ### 🎯 专题模式 (Topic Mode)
 - 结构化的知识专题学习
@@ -71,7 +72,7 @@ yuanzhi-app/
 │   ├── layouts/              # 布局组件
 │   ├── pages/                # 页面组件
 │   ├── features/             # 功能模块
-│   │   ├── exam-prep/        # 备考模式
+│   │   ├── exam-prep/        # 智能搜题
 │   │   ├── topic/            # 专题模式
 │   │   └── exploration/      # 探索模式
 │   ├── shared/               # 共享资源

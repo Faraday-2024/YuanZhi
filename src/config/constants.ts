@@ -27,8 +27,8 @@ export const ROUTES = {
 export const MODE_METADATA = {
   EXAM_PREP: {
     id: 'exam-prep',
-    title: '备考模式',
-    titleEn: 'Exam Prep Mode',
+    title: '智能搜题',
+    titleEn: 'Problem Solver',
     description: '上传题目图片，获得详细的解题步骤和可视化辅助',
     color: 'exam-primary',
     path: ROUTES.EXAM_PREP,

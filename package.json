@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "元知 - 可视化教育应用平台，集成备考模式、专题模式和探索模式",
+  "description": "元知 - 可视化教育应用平台，集成智能搜题、专题模式和探索模式",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
