@@ -106,9 +106,9 @@ const TopicHub: React.FC<TopicHubProps> = ({ onNavigate }) => {
            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-8 text-center">学习闭环 Methodology</h3>
            <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: Layers, title: "结构化讲义", desc: "AI 自动生成结构清晰的知识图谱，告别碎片化学习。" },
-                { icon: Sparkles, title: "个性化分析", desc: "不仅看分数，更看你的知识盲区，精准定位薄弱点。" },
-                { icon: Zap, title: "针对性训练", desc: "每一道推送的题目，都是为了解决你当下的思维卡点。" }
+                { icon: Layers, title: "结构化讲义", desc: "AI自动生成结构清晰的知识图谱，告别碎片化学习。" },
+                { icon: Sparkles, title: "个性化分析", desc: "不仅看分数，更发现知识盲区，精准定位薄弱点。" },
+                { icon: Zap, title: "针对性训练", desc: "每一道推送的题目，都为了解决你当下的思维卡点。" }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-700 shadow-sm border border-slate-100 mb-4">
