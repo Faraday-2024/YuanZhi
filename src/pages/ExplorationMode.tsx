@@ -574,7 +574,7 @@ const ExplorationMode: React.FC = () => {
       <Starfield />
       
       {scene !== SceneType.STARMAP && scene !== SceneType.GAME_INTRO && (
-        <div className="fixed top-0 left-0 w-full p-6 flex justify-between items-center pointer-events-none z-50 mix-blend-difference">
+        <div className="fixed top-20 left-0 w-full px-6 flex justify-between items-center pointer-events-none z-40 mix-blend-difference">
           <div className="flex items-center gap-4 text-slate-500 font-mono text-xs tracking-[0.2em]">
             <Terminal size={12} />
             <span>SYNC: {scene === SceneType.INTRO ? '0.0%' : '98.4%'}</span>

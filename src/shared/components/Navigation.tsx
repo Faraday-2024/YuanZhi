@@ -67,9 +67,6 @@ const Navigation: React.FC<NavigationProps> = () => {
             to={ROUTES.HOME}
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-              <span className="text-white font-bold text-xl">元</span>
-            </div>
             <div className="hidden sm:block">
               <h1 className={`text-xl font-bold ${isDarkBackground() ? 'text-white' : 'text-slate-900'} tracking-tight transition-colors`}>
                 {APP_NAME}
