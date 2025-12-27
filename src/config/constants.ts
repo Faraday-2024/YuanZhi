@@ -2,7 +2,7 @@
 
 export const APP_NAME = '元知';
 export const APP_NAME_EN = 'YuanZhi';
-export const APP_DESCRIPTION = '可视化教育平台';
+export const APP_DESCRIPTION = '助你学习的超级后盾';
 
 // API Configuration
 export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';

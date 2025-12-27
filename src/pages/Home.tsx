@@ -83,7 +83,7 @@ const Home: React.FC = () => {
             元知
           </h1>
           <p className="text-sm md:text-base text-white/50 font-light tracking-[0.3em] uppercase">
-            Meta Knowledge
+            助你学习的超级后盾
           </p>
         </div>
 
