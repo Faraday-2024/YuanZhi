@@ -71,7 +71,7 @@ const Navigation: React.FC<NavigationProps> = () => {
               <h1 className={`text-xl font-bold ${isDarkBackground() ? 'text-white' : 'text-slate-900'} tracking-tight transition-colors`}>
                 {APP_NAME}
               </h1>
-              <p className={`text-xs ${isDarkBackground() ? 'text-white/70' : 'text-slate-900/70'} transition-colors`}>解决学习中的任何困难>jp>
+              <p className={`text-xs ${isDarkBackground() ? 'text-white/70' : 'text-slate-900/70'} transition-colors`}>解决学习中的任何困难</p>
             </div>
           </Link>
 
