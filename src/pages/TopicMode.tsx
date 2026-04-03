@@ -3,6 +3,8 @@ import { ViewState } from '../features/topic/types';
 import TopicHub from '../features/topic/components/TopicHub';
 import MethodDetail from '../features/topic/components/MethodDetail';
 import LocalExam from '../features/topic/components/LocalExam';
+import useViewportManager from '@shared/hooks/useViewportManager';
+import ForceLandscape from '@shared/components/ForceLandscape';
 
 /**
  * Topic Mode Page
@@ -10,6 +12,9 @@ import LocalExam from '../features/topic/components/LocalExam';
  */
 const TopicMode: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.Dashboard);
+
+  // Force landscape and desktop viewport for this mode
+  useViewportManager(true);
 
   const renderContent = () => {
     switch (currentView) {
@@ -26,6 +31,7 @@ const TopicMode: React.FC = () => {
 
   return (
     <div className="h-screen bg-[#FDFDFD] font-sans text-slate-800 pt-16">
+      <ForceLandscape />
       {renderContent()}
     </div>
   );

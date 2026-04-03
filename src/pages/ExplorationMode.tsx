@@ -8,6 +8,8 @@ import OrbitCalculation from '@features/exploration/components/scenes/OrbitCalcu
 import { generateDialogue } from '@shared/services/geminiService';
 import { SceneType, Character, DialogueMessage } from '@features/exploration/types';
 import { Terminal, ArrowRight, BookOpen, Lock, ShieldAlert, Sparkles, Skull, AlertOctagon, Map } from 'lucide-react';
+import useViewportManager from '@shared/hooks/useViewportManager';
+import ForceLandscape from '@shared/components/ForceLandscape';
 
 // Fixed conclusion text - no AI generation needed
 const CONCLUSION_TEXT = [
@@ -86,6 +88,9 @@ const ExplorationMode: React.FC = () => {
   const [textParagraphs, setTextParagraphs] = useState<{text: string; subtitle: string; isLarge?: boolean}[]>([]);
   const [visibleParagraphs, setVisibleParagraphs] = useState(0);
   const [, setTychoTrust] = useState(40);
+
+  // Force landscape and desktop viewport for this mode
+  useViewportManager(true);
   // Character intro phases: 
   // showTitle -> showName -> moveUpAndShowBio -> hideBioAndTitle -> moveToSide -> done
   const [introPhase, setIntroPhase] = useState<'showTitle' | 'showName' | 'moveUpAndShowBio' | 'hideBioAndTitle' | 'moveToSide' | 'done'>('showTitle');
@@ -571,6 +576,7 @@ const ExplorationMode: React.FC = () => {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center p-4 relative overflow-hidden bg-[#020617]">
+      <ForceLandscape />
       <Starfield />
       
       {scene !== SceneType.STARMAP && scene !== SceneType.GAME_INTRO && (
