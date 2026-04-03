@@ -255,20 +255,20 @@
 }
 
 .force-landscape-icon {
-  width: 8rem; /* Increased from 6rem */
-  height: 8rem; /* Increased from 6rem */
-  margin-bottom: 2.5rem; /* Increased margin */
+  width: 10rem; /* Increased from 8rem */
+  height: 10rem; /* Increased from 8rem */
+  margin-bottom: 3rem; /* Increased margin */
   color: #5eead4; /* cyan-300 */
   animation: rotate-pulse 2.5s infinite cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .force-landscape-text {
-  font-size: 1.5rem; /* Increased from 1.25rem */
-  line-height: 2.25rem; /* Increased line-height */
+  font-size: 1.875rem; /* Increased from 1.5rem */
+  line-height: 2.5rem; /* Increased line-height */
   letter-spacing: 0.1em;
   text-align: center;
-  color: #cbd5e1; /* slate-300 */
-  text-shadow: 0 0 12px rgba(94, 234, 212, 0.4); /* Enhanced shadow */
+  color: #e2e8f0; /* slate-200, brighter */
+  text-shadow: 0 0 15px rgba(94, 234, 212, 0.5); /* Enhanced shadow */
 }
 
 @media screen and (orientation: portrait) {
