@@ -263,8 +263,8 @@
 }
 
 .force-landscape-text {
-  font-size: 2.25rem; /* Drastically increased from 1.875rem */
-  line-height: 2.75rem; /* Increased line-height */
+  font-size: 3rem; /* Massively increased from 2.25rem */
+  line-height: 3.5rem; /* Massively increased line-height */
   letter-spacing: 0.1em;
   text-align: center;
   color: #e2e8f0; /* slate-200, brighter */
